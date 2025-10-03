@@ -18,6 +18,8 @@ public class Problem1 {
         System.out.print("Please enter the third integer: ");
         Integer thirdInt = scanner.nextInt();
 
+        scanner.close();
+
         Double average = (double)((firstInt+secondInt+thirdInt)/3);
 
         System.out.println("The average of " + firstInt + ", " + secondInt + ", " + "and " + thirdInt + " is " + average);

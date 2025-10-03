@@ -12,6 +12,8 @@ public class Debugging {
     System.out.print("Enter second integer: ");
     double num2 = scan.nextDouble();
 
+    scan.close();
+
     double quotient = num1 / num2;               // Line A
     int sum = (int)(num1 + num2);                       // Line B
 
