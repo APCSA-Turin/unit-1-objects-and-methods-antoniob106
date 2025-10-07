@@ -47,4 +47,30 @@ public class ChatBot {
    public String goodbye() {
        return "It was nice talking with you! Have a great day! Sincerely, " + name;
    }
+
+   public void emotion(String yourEmotion) {
+        System.out.println("You're feeling " + yourEmotion + "?");
+        System.out.println("Well, I don't feel at all!");
+   }
+
+   public int favoriteNumbersTogether(int yourNumber) {
+        return number + yourNumber;
+   }
+
+   public double roundNumber(double unroundedNumber) {
+        return Math.round(unroundedNumber);
+   }
+
+   public void thanks() {
+        System.out.println("Oh, your welcome!");
+   }
+   
+   public String reverseName() {
+        StringBuilder reversedName = new StringBuilder(name).reverse();
+        return reversedName.toString();
+   }
+
+   public String combineWords(String word1, String word2) {
+        return word1 + word2;
+   }
 }
