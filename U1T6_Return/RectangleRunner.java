@@ -19,5 +19,9 @@ public class RectangleRunner {
         double rect2Height = myScanner.nextDouble();
 
         // finish the program as described below
+        Rectangle rect1 = new Rectangle(rect1Length, rect1Width);
+        Rectangle rect2 = new Rectangle(rect2Length, rect2Width);
+        System.out.println("Rectangle 1's Area: " + rect1.calculateArea() + ", Box Volume: " + rect1.calculateBoxVolume(rect1Height));
+        System.out.println("Rectangle 2's Area: " + rect2.calculateArea() + ", Box Volume: " + rect2.calculateBoxVolume(rect2Height));
     }
 }
