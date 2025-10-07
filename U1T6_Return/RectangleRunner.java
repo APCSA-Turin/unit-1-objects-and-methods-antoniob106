@@ -17,7 +17,7 @@ public class RectangleRunner {
         int rect2Width = myScanner.nextInt();
         System.out.print("Enter rectangle 2 height: ");
         double rect2Height = myScanner.nextDouble();
-
+        myScanner.close();
         // finish the program as described below
         Rectangle rect1 = new Rectangle(rect1Length, rect1Width);
         Rectangle rect2 = new Rectangle(rect2Length, rect2Width);
