@@ -41,7 +41,25 @@ public class Point {
 
     public String quadrant() {
         if (x>0 && y>0) {
-            return "I"
+            return "I";
+        }
+        else if (x<0 && y>0) {
+            return "II";
+        }
+        else if (x<0 && y<0) {
+            return "III";
+        }
+        else if (x>0 && y<0) {
+            return "IV";
+        }
+        else if (x==0 && y==0) {
+            return "origin";
+        }
+        else if (x==0 || y==0) {
+            return "on an axis";
+        }
+        else {
+            return "error";
         }
     }
 }
